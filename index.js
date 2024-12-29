@@ -1,5 +1,6 @@
 import simpleGit from 'simple-git';
 import fs from 'fs';
+import { exec } from '@actions/exec';
 import { UpdateService } from './update.service.js';
 
 const git = simpleGit();
@@ -39,4 +40,16 @@ if (!checkIfRepoExists()) {
 
 const updateService = new UpdateService();
 const apiData = await updateService.fetchApiData();
-console.log(JSON.stringify(apiData));
+const apiDataPath = './api.json';
+
+await exec.exec('git checkout -b data || git checkout data');
+await exec.exec('git pull origin data', [], { ignoreReturnCode: true });
+
+await fs.promises.writeFile(apiDataPath, JSON.stringify(apiData, null, 2));
+
+await exec.exec('git add api.json README.md LICENSE').then(async () => {
+    await exec.exec('git commit -m "Updated API data"').catch(async () => {
+        console.log('No changes to commit');
+    });
+    await exec.exec('git push origin data');
+});
