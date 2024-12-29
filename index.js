@@ -42,7 +42,7 @@ const updateService = new UpdateService();
 const apiData = await updateService.fetchApiData();
 const apiDataPath = './api.json';
 
-await exec('git checkout -b data || git checkout data');
+await exec('git checkout data');
 await exec('git pull origin data', [], { ignoreReturnCode: true });
 
 await fs.promises.writeFile(apiDataPath, JSON.stringify(apiData, null, 2));
