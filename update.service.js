@@ -71,6 +71,7 @@ export class UpdateService extends EventEmitter {
             const directoryEntries = await fs.readdir(directoryPath, {
                 withFileTypes: true,
             });
+            console.log(directoryEntries[0]);
             const markdownFiles = directoryEntries.filter(
                 (dirent) =>
                     dirent.isFile() &&
