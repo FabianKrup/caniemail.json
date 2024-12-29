@@ -3,6 +3,9 @@ name: Daily Can I Email... Repo Check
 on:
   schedule:
     - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
 
 jobs:
   check-for-updates:
