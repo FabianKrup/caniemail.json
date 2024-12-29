@@ -1,0 +1,11 @@
+{
+  "name": "caniemail.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "author": "Fabian Krupinski",
+  "license": "MIT"
+}
