@@ -1,60 +1,60 @@
 name: Daily Can I Email... Repo Check
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
-  push:
-    branches:
-      - main
+    schedule:
+        - cron: '0 0 * * *'
+    push:
+        branches:
+            - main
 
 jobs:
-  check-for-updates:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository caniemail
-        uses: actions/checkout@v2
-        with:
-          repository: "hteumeuleu/caniemail"
-          path: "caniemail"
+    check-for-updates:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repository caniemail
+              uses: actions/checkout@v2
+              with:
+                  repository: 'hteumeuleu/caniemail'
+                  path: 'caniemail'
 
-      - name: Check for updates
-        run: |
-          cd caniemail
-          git fetch origin
-          CHANGES=$(git log --since="24 hours ago" --pretty=format:"%h" | wc -l)
-          if [ "$CHANGES" -eq "0" ]; then
-            echo "No changes detected in the last 24 hours"
-            exit 1
-          else
-            echo "$CHANGES changes detected in the last 24 hours"
-          fi
+            - name: Check for updates
+              run: |
+                  cd caniemail
+                  git fetch origin
+                  CHANGES=$(git log --since="24 hours ago" --pretty=format:"%h" | wc -l)
+                  if [ "$CHANGES" -eq "0" ]; then
+                    echo "No changes detected in the last 24 hours"
+                    exit 0
+                  else
+                    echo "$CHANGES changes detected in the last 24 hours"
+                  fi
 
-      - name: Upload caniemail as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: caniemail-repo
-          path: caniemail/
+            - name: Upload caniemail as artifact
+              uses: actions/upload-artifact@v4
+              with:
+                  name: caniemail-repo
+                  path: caniemail/
 
-  run-data-update:
-    needs: check-for-updates
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    run-data-update:
+        needs: check-for-updates
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
 
-      - name: Download caniemail repository
-        uses: actions/download-artifact@v4
-        with:
-          name: caniemail-repo
-          path: caniemail/
+            - name: Download caniemail repository
+              uses: actions/download-artifact@v4
+              with:
+                  name: caniemail-repo
+                  path: caniemail/
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "22"
+            - name: Setup Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: '22'
 
-      - name: Install dependencies
-        run: npm install
+            - name: Install dependencies
+              run: npm install
 
-      - name: Run script
-        run: node index.js
+            - name: Run script
+              run: node index.js
