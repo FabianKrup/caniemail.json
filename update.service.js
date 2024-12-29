@@ -8,11 +8,13 @@ import { frontmatterParse } from './frontmatter.js';
 
 export class UpdateService extends EventEmitter {
     async fetchApiData() {
+        const apiVersion = await this.fetchApiVersion();
         const nicenames = await this.fetchNicenames();
         const features = await this.fetchFeatures();
 
-        if (nicenames && features) {
+        if (apiVersion && nicenames && features) {
             const apiResponse = {
+                api_version: apiVersion,
                 last_update_date: new Date().toISOString(),
                 nicenames: nicenames,
                 data: features,
@@ -22,6 +24,43 @@ export class UpdateService extends EventEmitter {
         }
 
         return null;
+    }
+
+    async fetchApiVersion() {
+        const filePath = '_js/api.json';
+
+        try {
+            // Check if the file exists and is readable
+            await fs.access(filePath, constants.R_OK);
+
+            const file = await fs.readFile(filePath, {
+                encoding: 'utf-8',
+            });
+
+            if (file) {
+                const fileBody = frontmatterParse(file, {
+                    ignoreDuplicateKeys: true,
+                }).body;
+
+                const regex =
+                    /"api_version"\s*:\s*"([^"]+)"|'api_version'\s*:\s*'([^']+)'/;
+                const match = fileBody.match(regex);
+                const apiVersion = match ? match[1] || match[2] : null;
+                return apiVersion;
+            }
+        } catch (error) {
+            if (error.code === 'ENOENT') {
+                console.error(`The file ${filePath} does not exist.`);
+            } else if (error.code === 'EACCES') {
+                console.error(`The file ${filePath} is not readable.`);
+            } else {
+                console.error(
+                    'An error occurred while fetching API version:',
+                    error,
+                );
+            }
+            return null;
+        }
     }
 
     async fetchNicenames() {
