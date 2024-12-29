@@ -7,8 +7,7 @@
   "dependencies": {
     "@actions/exec": "^1.1.1",
     "axios": "^1.7.9",
-    "js-yaml": "^4.1.0",
-    "simple-git": "^3.27.0"
+    "js-yaml": "^4.1.0"
   },
   "scripts": {},
   "author": "Fabian Krupinski",
