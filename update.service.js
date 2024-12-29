@@ -102,7 +102,7 @@ export class UpdateService extends EventEmitter {
     }
 
     async fetchFeatures() {
-        const directoryPath = './_features';
+        const directoryPath = '_features';
 
         try {
             const directoryEntries = await fs.readdir(directoryPath, {
@@ -118,7 +118,7 @@ export class UpdateService extends EventEmitter {
             const featureContents = await Promise.all(
                 markdownFiles.map(async (dirent) => {
                     const fileContent = await fs.readFile(
-                        `./_features/${dirent.name}`,
+                        `_features/${dirent.name}`,
                         { encoding: 'utf-8' },
                     );
 
