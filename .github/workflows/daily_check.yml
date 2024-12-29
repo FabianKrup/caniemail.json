@@ -21,13 +21,13 @@ jobs:
         run: |
           cd caniemail
           git fetch origin
-          CHANGES=$(git diff --name-only origin/main --since="24 hours ago")
-          if [ -z "$CHANGES" ]; then
+          CHANGES=$(git log --since="24 hours ago" --pretty=format:"%h" | wc -l)
+          if [ "$CHANGES" -eq "0" ]; then
             echo "No changes detected in the last 24 hours"
             exit 0
           else
-            echo "Changes detected in the last 24 hours in the following files:"
-            echo "$CHANGES"
+            echo "$CHANGES changes detected in the last 24 hours"
+          fi
           cd ..
 
       - name: Setup Node.js
