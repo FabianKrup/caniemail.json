@@ -24,11 +24,12 @@ jobs:
           CHANGES=$(git log --since="24 hours ago" --pretty=format:"%h" | wc -l)
           if [ "$CHANGES" -eq "0" ]; then
             echo "No changes detected in the last 24 hours"
+            cd ..
             exit 0
           else
             echo "$CHANGES changes detected in the last 24 hours"
+            cd ..
           fi
-          cd ..
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
