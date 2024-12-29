@@ -66,8 +66,6 @@ jobs:
 
             - name: Copy API, README, and LICENSE to Data branch
               run: |
-                  cp README.md .
-                  cp LICENSE .
                   git add api.json README.md LICENSE
                   git commit -m "Updated API data" || echo "No changes to commit"
                   git push origin data
