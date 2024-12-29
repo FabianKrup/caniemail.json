@@ -29,6 +29,10 @@ jobs:
             echo "$CHANGES changes detected in the last 24 hours"
           fi
 
+  run-data-update:
+    needs: check-for-updates
+    runs-on: ubuntu-latest
+    steps:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
