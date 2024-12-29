@@ -59,6 +59,11 @@ jobs:
             - name: Run script
               run: node index.js > api.json
 
+            - name: Configure git user
+              run: |
+                  git config user.email "fabian.krupinski@next-levels.de"
+                  git config user.name "Fabian Krupinski"
+
             - name: Checkout to Data Branch
               run: |
                   git checkout -b data || git checkout data
@@ -69,5 +74,3 @@ jobs:
                   git add api.json README.md LICENSE
                   git commit -m "Updated API data" || echo "No changes to commit"
                   git push origin data
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
