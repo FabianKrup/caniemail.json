@@ -29,12 +29,24 @@ jobs:
             echo "$CHANGES changes detected in the last 24 hours"
           fi
 
+      - name: Upload caniemail as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: caniemail-repo
+          path: caniemail/
+
   run-data-update:
     needs: check-for-updates
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Download caniemail repository
+        uses: actions/download-artifact@v2
+        with:
+          name: caniemail-repo
+          path: caniemail/
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
