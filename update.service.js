@@ -29,7 +29,7 @@ export class UpdateService extends EventEmitter {
     }
 
     async fetchApiVersion() {
-        const filePath = './_js/api.json';
+        const filePath = './caniemail/_js/api.json';
 
         try {
             // Check if the file exists and is readable
@@ -66,7 +66,7 @@ export class UpdateService extends EventEmitter {
     }
 
     async fetchNicenames() {
-        const filePath = './_data/nicenames.yml';
+        const filePath = './caniemail/_data/nicenames.yml';
 
         try {
             // Check if the file exists and is readable
@@ -102,7 +102,7 @@ export class UpdateService extends EventEmitter {
     }
 
     async fetchFeatures() {
-        const directoryPath = './_features';
+        const directoryPath = './caniemail/_features';
 
         try {
             const directoryEntries = await fs.readdir(directoryPath, {
