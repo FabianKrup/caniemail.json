@@ -65,13 +65,12 @@ export class UpdateService extends EventEmitter {
     }
 
     async fetchFeatures() {
-        const directoryPath = './caniemail/_features';
+        const directoryPath = './_features';
 
         try {
             const directoryEntries = await fs.readdir(directoryPath, {
                 withFileTypes: true,
             });
-            console.log(directoryEntries[0]);
             const markdownFiles = directoryEntries.filter(
                 (dirent) =>
                     dirent.isFile() &&
@@ -82,7 +81,7 @@ export class UpdateService extends EventEmitter {
             const featureContents = await Promise.all(
                 markdownFiles.map(async (dirent) => {
                     const fileContent = await fs.readFile(
-                        `./caniemail/_features/${dirent.name}`,
+                        `./_features/${dirent.name}`,
                         { encoding: 'utf-8' },
                     );
 
