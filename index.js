@@ -1,8 +1,43 @@
+import simpleGit from 'simple-git';
 import fs from 'fs';
 import { exec } from '@actions/exec';
 import { UpdateService } from './update.service.js';
 
-if (!fs.existsSync('./caniemail/.git')) {
+const git = simpleGit();
+
+const checkIfRepoExists = async () => {
+    try {
+        const dirPath = './caniemail';
+
+        if (fs.existsSync(dirPath)) {
+            // Change the current directory to "caniemail"
+            process.chdir(dirPath);
+
+            // Check if the current directory is a Git repository
+            const isRepo = await git.checkIsRepo();
+            if (isRepo) {
+                process.chdir('../');
+                return true;
+            } else {
+                console.error(
+                    'Das Verzeichnis `caniemail` ist kein Git-Repository.',
+                );
+                process.chdir('../');
+                return false;
+            }
+        } else {
+            console.error('Das Verzeichnis `caniemail` existiert nicht.');
+            process.chdir('../');
+            return false;
+        }
+    } catch (error) {
+        console.error('Ein Fehler ist aufgetreten:', error);
+        process.chdir('../');
+        return false;
+    }
+};
+
+if (!checkIfRepoExists()) {
     console.error('Das Verzeichnis `caniemail` existiert nicht.');
     process.exit(1);
 }
