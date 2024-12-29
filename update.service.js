@@ -40,13 +40,11 @@ export class UpdateService extends EventEmitter {
             if (file) {
                 const fileBody = frontmatterParse(file, {
                     ignoreDuplicateKeys: true,
-                });
-
-                console.log(fileBody);
+                }).body;
 
                 const regex =
                     /"api_version"\s*:\s*"([^"]+)"|'api_version'\s*:\s*'([^']+)'/;
-                const match = fileBody.body.match(regex);
+                const match = fileBody.match(regex);
                 const apiVersion = match ? match[1] || match[2] : null;
                 return apiVersion;
             }
