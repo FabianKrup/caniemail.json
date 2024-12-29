@@ -16,28 +16,24 @@ const checkIfRepoExists = async () => {
             // Check if the current directory is a Git repository
             const isRepo = await git.checkIsRepo();
             if (isRepo) {
-                process.chdir('../');
                 return true;
             } else {
                 console.error(
                     'Das Verzeichnis `caniemail` ist kein Git-Repository.',
                 );
-                process.chdir('../');
                 return false;
             }
         } else {
             console.error('Das Verzeichnis `caniemail` existiert nicht.');
-            process.chdir('../');
             return false;
         }
     } catch (error) {
         console.error('Ein Fehler ist aufgetreten:', error);
-        process.chdir('../');
         return false;
     }
 };
 
-if (!checkIfRepoExists()) {
+if (!(await checkIfRepoExists())) {
     console.error('Das Verzeichnis `caniemail` existiert nicht.');
     process.exit(1);
 }
