@@ -47,7 +47,7 @@ await exec('git pull origin data', [], { ignoreReturnCode: true });
 
 await fs.promises.writeFile(apiDataPath, JSON.stringify(apiData, null, 2));
 
-await exec('git add api.json README.md LICENSE').then(async () => {
+await exec('git add api.json').then(async () => {
     await exec('git commit -m "Updated API data"').catch(async () => {
         console.log('No changes to commit');
     });
