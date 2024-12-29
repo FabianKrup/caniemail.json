@@ -56,11 +56,6 @@ jobs:
             - name: Install dependencies
               run: npm install
 
-            - name: Configure Git
-              run: |
-                  git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-                  git config --local user.name "github-actions[bot]"
-
             - name: Run script
               run: node index.js > api.json
 
@@ -74,3 +69,5 @@ jobs:
                   git add api.json README.md LICENSE
                   git commit -m "Updated API data" || echo "No changes to commit"
                   git push origin data
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
