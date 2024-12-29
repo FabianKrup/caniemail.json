@@ -24,7 +24,7 @@ jobs:
           CHANGES=$(git log --since="24 hours ago" --pretty=format:"%h" | wc -l)
           if [ "$CHANGES" -eq "0" ]; then
             echo "No changes detected in the last 24 hours"
-            exit 0
+            exit 1
           else
             echo "$CHANGES changes detected in the last 24 hours"
           fi
