@@ -38,20 +38,30 @@ if (!checkIfRepoExists()) {
     process.exit(1);
 }
 
-const updateService = new UpdateService();
-const apiData = await updateService.fetchApiData();
-const apiDataPath = './api.json';
+try {
+    const updateService = new UpdateService();
+    const apiData = await updateService.fetchApiData();
+    const apiDataPath = './api.json';
 
-await exec('git checkout -b data');
-await exec('git pull --rebase --strategy-option=ours origin data', [], {
-    ignoreReturnCode: true,
-});
+    // Attempt to write API data to file
+    await fs.promises.writeFile(apiDataPath, JSON.stringify(apiData, null, 2));
+    console.log('API data has been written to api.json');
 
-await fs.promises.writeFile(apiDataPath, JSON.stringify(apiData, null, 2));
+    // Attempt to add api.json to staging
+    await exec('git add api.json');
+    console.log('api.json has been staged for commit');
 
-await exec('git add api.json').then(async () => {
-    await exec('git commit -m "Updated API data"').catch(async () => {
-        console.log('No changes to commit');
-    });
+    // Commit changes, if any
+    try {
+        await exec('git commit -m "Updated API data"');
+        console.log('API data has been committed');
+    } catch (commitError) {
+        console.log('No changes to commit or an error occurred:', commitError);
+    }
+
+    // Attempt to push changes
     await exec('git push origin data');
-});
+    console.log('Changes have been pushed to the data branch');
+} catch (error) {
+    console.error('An error occurred during the update process:', error);
+}
