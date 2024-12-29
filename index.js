@@ -47,6 +47,11 @@ try {
     await fs.promises.writeFile(apiDataPath, JSON.stringify(apiData, null, 2));
     console.log('API data has been written to api.json');
 
+    await exec(
+        'git config user.email "${{ github.actor }}@users.noreply.github.com"',
+    );
+    await exec('git config user.name "${{ github.actor }}"');
+
     // Attempt to add api.json to staging
     await exec('git add api.json');
     console.log('api.json has been staged for commit');
@@ -60,7 +65,7 @@ try {
     }
 
     // Attempt to push changes
-    await exec('git push origin data');
+    await exec('git push -u origin data');
     console.log('Changes have been pushed to the data branch');
 } catch (error) {
     console.error('An error occurred during the update process:', error);
