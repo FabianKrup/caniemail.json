@@ -12,6 +12,8 @@ export class UpdateService extends EventEmitter {
         const nicenames = await this.fetchNicenames();
         const features = await this.fetchFeatures();
 
+        console.log(apiVersion, nicenames, features);
+
         if (apiVersion && nicenames && features) {
             const apiResponse = {
                 api_version: apiVersion,
