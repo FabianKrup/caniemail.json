@@ -13,6 +13,14 @@ export class UpdateService extends EventEmitter {
         const files = await fs.readdir('./');
         console.log(files);
 
+        console.log('Listing _data directory contents:');
+        const dataFiles = await fs.readdir('./_data');
+        console.log(dataFiles);
+
+        console.log('Listing _features directory contents:');
+        const featureFiles = await fs.readdir('./_features');
+        console.log(featureFiles);
+
         const apiVersion = await this.fetchApiVersion();
         const nicenames = await this.fetchNicenames();
         const features = await this.fetchFeatures();
