@@ -30,7 +30,7 @@ jobs:
           fi
 
       - name: Upload caniemail as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: caniemail-repo
           path: caniemail/
@@ -43,7 +43,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download caniemail repository
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: caniemail-repo
           path: caniemail/
