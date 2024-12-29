@@ -57,4 +57,18 @@ jobs:
               run: npm install
 
             - name: Run script
-              run: node index.js
+              run: node index.js > api.json
+
+            - name: Checkout to Data Branch
+              run: |
+                  git checkout -b data || git checkout data
+                  git pull origin data || true
+
+            - name: Copy API, README, and LICENSE to Data branch
+              run: |
+                  cp api.json .
+                  cp README.md .
+                  cp LICENSE .
+                  git add .
+                  git commit -m "Updated API data" || echo "No changes to commit"
+                  git push origin data

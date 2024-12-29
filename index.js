@@ -38,4 +38,5 @@ if (!checkIfRepoExists()) {
 }
 
 const updateService = new UpdateService();
-console.log('fetchApiData', await updateService.fetchApiData());
+const apiData = await updateService.fetchApiData();
+console.log(JSON.stringify(apiData));
