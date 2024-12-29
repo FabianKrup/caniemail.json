@@ -17,13 +17,13 @@ const checkIfRepoExists = async () => {
             if (isRepo) {
                 return true;
             } else {
-                console.log(
+                console.error(
                     'Das Verzeichnis `caniemail` ist kein Git-Repository.',
                 );
                 return false;
             }
         } else {
-            console.log('Das Verzeichnis `caniemail` existiert nicht.');
+            console.error('Das Verzeichnis `caniemail` existiert nicht.');
             return false;
         }
     } catch (error) {
@@ -32,6 +32,10 @@ const checkIfRepoExists = async () => {
     }
 };
 
-console.log('checkIfRepoExists', await checkIfRepoExists());
+if (!checkIfRepoExists()) {
+    console.error('Das Verzeichnis `caniemail` existiert nicht.');
+    process.exit(1);
+}
 
 const updateService = new UpdateService();
+console.log('fetchApiData', await updateService.fetchApiData());

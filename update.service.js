@@ -7,13 +7,7 @@ import { FeatureTypeChecker, NicenamesTypeChecker } from './format.checker.js';
 import { frontmatterParse } from './frontmatter.js';
 
 export class UpdateService extends EventEmitter {
-    constructor() {
-        super();
-
-        this.fetchApiResponse();
-    }
-
-    async fetchApiResponse() {
+    async fetchApiData() {
         const nicenames = await this.fetchNicenames();
         const features = await this.fetchFeatures();
 
@@ -24,8 +18,10 @@ export class UpdateService extends EventEmitter {
                 data: features,
             };
 
-            console.log('API Response:', apiResponse);
+            return apiResponse;
         }
+
+        return null;
     }
 
     async fetchNicenames() {
