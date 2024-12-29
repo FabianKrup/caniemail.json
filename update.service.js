@@ -8,6 +8,11 @@ import { frontmatterParse } from './frontmatter.js';
 
 export class UpdateService extends EventEmitter {
     async fetchApiData() {
+        // log current directory content
+        console.log('Current directory content:');
+        const files = await fs.readdir('./');
+        console.log(files);
+
         const apiVersion = await this.fetchApiVersion();
         const nicenames = await this.fetchNicenames();
         const features = await this.fetchFeatures();
