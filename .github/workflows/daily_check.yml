@@ -63,6 +63,7 @@ jobs:
               run: |
                   git config user.email "fabian.krupinski@next-levels.de"
                   git config user.name "Fabian Krupinski"
+                  git config --global http.https://github.com/.extraheader "AUTHORIZATION: bearer ${{ secrets.GIT_PAT }}"
 
             - name: Checkout to Data Branch
               run: |
