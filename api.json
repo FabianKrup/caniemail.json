@@ -1,6 +1,6 @@
 {
   "api_version": "1.0.4",
-  "last_update_date": "2025-04-24T01:48:08.112Z",
+  "last_update_date": "2025-04-25T01:48:46.039Z",
   "nicenames": {
     "family": {
       "gmail": "Gmail",
@@ -2080,7 +2080,8 @@
       "test_results_url": "https://app.emailonacid.com/app/acidtest/hMLCNCSKZYHkLgLOpIWltlnYjtagbNsrwzMxalc2VbghN/list",
       "notes": null,
       "notes_by_num": {
-        "1": "Buggy. The first rule inside a media query is not prefixed."
+        "1": "Buggy. The first rule inside a media query is not prefixed.",
+        "2": "Partial. `orientation:portrait` is not supported."
       },
       "links": {
         "Can I use: CSS3 Media Queries": "https://caniuse.com/#feat=css-mediaqueries",
@@ -2098,7 +2099,8 @@
             "12": "y",
             "13": "y",
             "15": "y",
-            "10.3": "n"
+            "10.3": "n",
+            "18.3.2": "a #2"
           }
         },
         "gmail": {
@@ -2106,7 +2108,8 @@
             "2019-08": "y"
           },
           "ios": {
-            "2019-08": "y"
+            "2019-08": "y",
+            "2025-04": "n"
           },
           "android": {
             "2019-08": "y"
@@ -6134,7 +6137,7 @@
       "slug": "css-border-radius-logical",
       "description": "Support for border radius logical properties",
       "url": "",
-      "tags": [],
+      "tags": "i18n",
       "keywords": "border-start-start-radius, border-start-end-radius, border-end-start-radius, border-end-end-radius",
       "test_url": "/tests/css-border-logical-properties.html",
       "test_results_url": "https://testi.at/proj/1yxFDAGtwrUmbf4tzMTY",
@@ -10650,6 +10653,11 @@
           "android": {
             "2024-03": "u"
           }
+        },
+        "thunderbird": {
+          "macos": {
+            "128.9.0": "y"
+          }
         }
       }
     },
@@ -12572,13 +12580,13 @@
         },
         "aol": {
           "desktop-webmail": {
-            "2019-09": "y #1"
+            "2019-09": "n #1"
           },
           "ios": {
-            "2019-09": "y #1"
+            "2019-09": "n #1"
           },
           "android": {
-            "2019-09": "y #1"
+            "2019-09": "n #1"
           }
         },
         "yahoo": {
@@ -13553,8 +13561,8 @@
       "slug": "css-inset",
       "description": "Shorthand that corresponds to the `top`, `right`, `bottom`, and/or `left` properties",
       "url": "",
-      "tags": [],
-      "keywords": null,
+      "tags": "i18n",
+      "keywords": "inset-block, inset-inline, inset-inline-start, inset-inline-end, inset-block-start, inset-block-end",
       "test_url": "/tests/css-inset.html",
       "test_results_url": "https://testi.at/proj/rlpdia3k18jytjx8c2",
       "notes": null,
@@ -14087,7 +14095,8 @@
       "test_results_url": "https://app.emailonacid.com/app/acidtest/E45AW3a9IiIhUSBpv3dc1qPfMiMN8mLepy5BsvqtpXhhy/list",
       "notes": null,
       "notes_by_num": {
-        "1": "Partial. `left` and `top` are not supported."
+        "1": "Partial. `left` and `top` are not supported.",
+        "2": "Partial. Percentages values are not supported."
       },
       "links": {
         "Can I use: CSS property: z-index": "https://caniuse.com/mdn-css_properties_left",
@@ -14159,7 +14168,8 @@
         },
         "samsung-email": {
           "android": {
-            "6.0": "y"
+            "6.0": "y",
+            "6.2.01.1": "a #2"
           }
         },
         "sfr": {
@@ -14648,7 +14658,8 @@
       "notes": null,
       "notes_by_num": {
         "1": "Gradients can be created in VML using `type=\"gradient\"` on a `<v:fill>`. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/web-workshop---how-to-use-vml-on-web-pages-----fill--element#gradient-fill).",
-        "2": "Partial. Not supported with Hotmail/Outlook accounts."
+        "2": "Partial. Not supported with Hotmail/Outlook accounts.",
+        "3": "Buggy. Does not work inline in the `background-image` property. (See [email-bugs#135](https://github.com/hteumeuleu/email-bugs/issues/135))"
       },
       "links": {
         "Can I use: CSS Gradients": "https://caniuse.com/css-gradients",
@@ -14674,7 +14685,8 @@
             "2021-12": "y"
           },
           "android": {
-            "2021-12": "y"
+            "2021-12": "y",
+            "2025-04": "a #3"
           },
           "mobile-webmail": {
             "2021-12": "y"
@@ -15829,13 +15841,14 @@
         },
         "orange": {
           "desktop-webmail": {
-            "2022-07": "u"
+            "2022-07": "y",
+            "2021-03": "y"
           },
           "ios": {
-            "2022-07": "u"
+            "2022-07": "y"
           },
           "android": {
-            "2022-07": "u"
+            "2022-07": "y"
           }
         },
         "outlook": {
@@ -15871,18 +15884,18 @@
         },
         "sfr": {
           "desktop-webmail": {
-            "2022-07": "u"
+            "2022-07": "y"
           },
           "ios": {
-            "2022-07": "u"
+            "2022-07": "y"
           },
           "android": {
-            "2022-07": "u"
+            "2022-07": "y"
           }
         },
         "thunderbird": {
           "macos": {
-            "60.3": "u"
+            "60.3": "y"
           }
         },
         "aol": {
@@ -15909,18 +15922,18 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2022-07": "u"
+            "2022-07": "y"
           },
           "ios": {
-            "2022-07": "u"
+            "2022-07": "y"
           },
           "android": {
-            "2022-07": "u"
+            "2022-07": "y"
           }
         },
         "hey": {
           "desktop-webmail": {
-            "2022-07": "u"
+            "2022-07": "y"
           }
         },
         "mail-ru": {
@@ -15930,12 +15943,12 @@
         },
         "fastmail": {
           "desktop-webmail": {
-            "2022-07": "u"
+            "2022-07": "y"
           }
         },
         "laposte": {
           "desktop-webmail": {
-            "2022-07": "u"
+            "2022-07": "y"
           }
         },
         "gmx": {
@@ -16126,196 +16139,6 @@
         "laposte": {
           "desktop-webmail": {
             "2022-07": "u"
-          }
-        },
-        "gmx": {
-          "desktop-webmail": {
-            "2022-09": "n"
-          },
-          "ios": {
-            "2022-09": "y"
-          },
-          "android": {
-            "2022-09": "y"
-          }
-        },
-        "web-de": {
-          "desktop-webmail": {
-            "2022-09": "n"
-          },
-          "ios": {
-            "2022-09": "y"
-          },
-          "android": {
-            "2022-09": "y"
-          }
-        },
-        "ionos-1and1": {
-          "desktop-webmail": {
-            "2022-09": "y"
-          },
-          "android": {
-            "2022-09": "y"
-          }
-        }
-      }
-    },
-    {
-      "slug": "css-margin-inline",
-      "description": "Support for the `margin-inline` and `margin-block` shorthand properties.",
-      "url": "",
-      "tags": [],
-      "keywords": "margin-inline, margin-block",
-      "test_url": "/tests/css-margin-logical-properties.html",
-      "test_results_url": "https://testi.at/proj/qAmuL03Fg51cE6hkbNSVrXik",
-      "notes": null,
-      "notes_by_num": null,
-      "links": {
-        "MDN: margin-inline": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline",
-        "MDN: margin-block": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block"
-      },
-      "title": "margin-inline & margin-block",
-      "category": "css",
-      "last_test_date": "2022-07-01",
-      "stats": {
-        "apple-mail": {
-          "macos": {
-            "10.12.6": "n",
-            "10.13.6": "n",
-            "10.15.7": "n",
-            "12.4": "y"
-          },
-          "ios": {
-            "12": "n",
-            "13": "n",
-            "14": "n",
-            "15": "y",
-            "11.4": "n"
-          }
-        },
-        "gmail": {
-          "desktop-webmail": {
-            "2022-07": "n"
-          },
-          "ios": {
-            "2022-07": "n"
-          },
-          "android": {
-            "2022-07": "n"
-          },
-          "mobile-webmail": {
-            "2022-07": "n"
-          }
-        },
-        "orange": {
-          "desktop-webmail": {
-            "2022-07": "y",
-            "2021-03": "y"
-          },
-          "ios": {
-            "2022-07": "y"
-          },
-          "android": {
-            "2022-07": "y"
-          }
-        },
-        "outlook": {
-          "windows": {
-            "2013": "n",
-            "2016": "n",
-            "2019": "n",
-            "2021": "n"
-          },
-          "windows-mail": {
-            "2022-07": "n"
-          },
-          "macos": {
-            "2011": "n",
-            "2016": "n",
-            "16.80": "n"
-          },
-          "outlook-com": {
-            "2022-07": "n"
-          },
-          "ios": {
-            "2022-07": "n"
-          },
-          "android": {
-            "2022-07": "n"
-          }
-        },
-        "samsung-email": {
-          "android": {
-            "10": "n"
-          }
-        },
-        "sfr": {
-          "desktop-webmail": {
-            "2022-07": "y"
-          },
-          "ios": {
-            "2022-07": "y"
-          },
-          "android": {
-            "2022-07": "y"
-          }
-        },
-        "thunderbird": {
-          "macos": {
-            "60.3": "y"
-          }
-        },
-        "aol": {
-          "desktop-webmail": {
-            "2022-07": "n"
-          },
-          "ios": {
-            "2022-07": "n"
-          },
-          "android": {
-            "2022-07": "n"
-          }
-        },
-        "yahoo": {
-          "desktop-webmail": {
-            "2022-07": "n"
-          },
-          "ios": {
-            "2022-07": "n"
-          },
-          "android": {
-            "2022-07": "n"
-          }
-        },
-        "protonmail": {
-          "desktop-webmail": {
-            "2022-07": "y"
-          },
-          "ios": {
-            "2022-07": "y"
-          },
-          "android": {
-            "2022-07": "y"
-          }
-        },
-        "hey": {
-          "desktop-webmail": {
-            "2022-07": "y"
-          }
-        },
-        "mail-ru": {
-          "desktop-webmail": {
-            "2022-07": "y"
-          }
-        },
-        "fastmail": {
-          "desktop-webmail": {
-            "2022-07": "y"
-          }
-        },
-        "laposte": {
-          "desktop-webmail": {
-            "2022-07": "y"
           }
         },
         "gmx": {
@@ -16739,7 +16562,7 @@
       "slug": "css-max-block-size",
       "description": "",
       "url": "",
-      "tags": [],
+      "tags": "i18n",
       "keywords": "max, block, size",
       "test_url": "/tests/css-max-block-size.html",
       "test_results_url": "https://testi.at/proj/1y7SkPH3W7FPg0HwxS9lEiY",
@@ -17065,7 +16888,7 @@
       "slug": "css-max-inline-size",
       "description": "Defines the horizontal or vertical maximum size of an element's block, depending on its writing mode",
       "url": "",
-      "tags": [],
+      "tags": "i18n",
       "keywords": "max, inline, size",
       "test_url": "/tests/css-max-inline-size.html",
       "test_results_url": "https://testi.at/proj/8r8g0dn81y8jc72z09",
@@ -17429,7 +17252,7 @@
       "slug": "css-min-block-size",
       "description": "Defines the minimum horizontal or vertical size of an element's block, depending on its writing mode",
       "url": "",
-      "tags": [],
+      "tags": "i18n",
       "keywords": "min, block, size",
       "test_url": "/tests/css-min-block-size.html",
       "test_results_url": "https://testi.at/proj/73yg05zgtpk3cez6ua5",
@@ -17788,7 +17611,7 @@
       "slug": "css-min-inline-size",
       "description": "",
       "url": "",
-      "tags": [],
+      "tags": "i18n",
       "keywords": "min, inline, size",
       "test_url": "/tests/css-min-inline-size.html",
       "test_results_url": "https://testi.at/proj/6m0cx5puENPh8pLi9rpSPzJSB",
@@ -18572,7 +18395,8 @@
         },
         "thunderbird": {
           "macos": {
-            "102.15": "n"
+            "102.15": "n",
+            "137.0b3": "y"
           }
         },
         "aol": {
@@ -19784,7 +19608,9 @@
       "test_url": "/tests/css-overflow-wrap.html",
       "test_results_url": "https://testi.at/proj/zxOsWrYsJqztvWC7JYF8xrUgn",
       "notes": null,
-      "notes_by_num": null,
+      "notes_by_num": {
+        "1": "Buggy. Requires `word-break:normal` to reset Apple Mail default style (See [issue#394](https://github.com/hteumeuleu/caniemail/issues/394).)"
+      },
       "links": {
         "Can I use: CSS property: Overflow-wrap": "https://caniuse.com/wordwrap",
         "MDN: overflow-wrap": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap"
@@ -19795,19 +19621,10 @@
       "stats": {
         "apple-mail": {
           "macos": {
-            "16": "n",
-            "17": "n",
-            "18": "n",
-            "19": "n",
-            "20": "n",
-            "21": "n"
+            "16.0": "a #1"
           },
           "ios": {
-            "11": "n",
-            "12": "n",
-            "13": "n",
-            "14": "n",
-            "15": "n"
+            "18.3.2": "a #1"
           }
         },
         "gmail": {
@@ -19933,7 +19750,7 @@
       "description": "Sets the desired behavior when content does not fit in the element's padding box",
       "url": "",
       "tags": [],
-      "keywords": null,
+      "keywords": "overflow-block, overflow-inline",
       "test_url": "/tests/css-box-model.html",
       "test_results_url": "https://testi.at/proj/p4rru3ez069p15p6ij",
       "notes": null,
@@ -25962,7 +25779,8 @@
       "test_results_url": "https://app.emailonacid.com/app/acidtest/8FCYDYSPXot6jquGzeiqGsfoeCU4tvCeRpnVG0z6luNLr/list",
       "notes": null,
       "notes_by_num": {
-        "1": "Gradients can be created in VML using `type=\"gradientRadial\"` on a `<v:fill>`. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/web-workshop---how-to-use-vml-on-web-pages-----fill--element#gradient-fill)."
+        "1": "Gradients can be created in VML using `type=\"gradientRadial\"` on a `<v:fill>`. See [VML documentation](https://docs.microsoft.com/en-us/windows/win32/vml/web-workshop---how-to-use-vml-on-web-pages-----fill--element#gradient-fill).",
+        "2": "Buggy. Does not work inline in the `background-image` property. (See [email-bugs#135](https://github.com/hteumeuleu/email-bugs/issues/135))"
       },
       "links": {
         "Can I use: CSS Gradients": "https://caniuse.com/css-gradients",
@@ -25988,7 +25806,8 @@
             "2021-12": "y"
           },
           "android": {
-            "2021-12": "y"
+            "2021-12": "y",
+            "2025-04": "a #2"
           },
           "mobile-webmail": {
             "2021-12": "y"
@@ -31979,7 +31798,7 @@
       "slug": "css-text-orientation",
       "description": "Sets the orientation of the text characters in vertical mode.",
       "url": "",
-      "tags": [],
+      "tags": "i18n",
       "keywords": "vertical orientation",
       "test_url": "/tests/css-text-orientation.html",
       "test_results_url": "https://testi.at/proj/6vppidbfjxnczrxh4",
@@ -39092,7 +38911,7 @@
       "slug": "html-abbr",
       "description": "Represents an abbreviation or acronym.",
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": null,
       "test_url": "/tests/html-abbr.html",
       "test_results_url": "https://testi.at/proj/xlp4una8f926u48oco8",
@@ -42001,10 +41820,12 @@
             "2024-01": "a #1"
           },
           "ios": {
-            "2021-11": "n"
+            "2021-11": "n",
+            "2025-04": "a #1"
           },
           "android": {
-            "2021-11": "n"
+            "2021-11": "n",
+            "2025-04": "a #1"
           }
         },
         "samsung-email": {
@@ -42866,7 +42687,7 @@
       "slug": "html-code",
       "description": "A short fragment of computer code.",
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": null,
       "test_url": "/tests/html-code.html",
       "test_results_url": "https://testi.at/proj/VpMij9qijz7SbpecQE7ubxbhQl",
@@ -45099,7 +44920,7 @@
       "slug": "html-hr",
       "description": "HTML horizontal rule",
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": null,
       "test_url": "/tests/html-hr.html",
       "test_results_url": "https://testi.at/proj/e6ndurbxtpz9hz95hp",
@@ -45456,7 +45277,7 @@
       "slug": "html-img",
       "description": "Displays an image into the document",
       "url": "",
-      "tags": [],
+      "tags": "performance accessibility",
       "keywords": null,
       "test_url": "/tests/html-img.html",
       "test_results_url": "https://testi.at/proj/dyogfa8504y2cljofa2",
@@ -51741,7 +51562,7 @@
       "tags": [],
       "keywords": null,
       "test_url": "/tests/html-style.html",
-      "test_results_url": "https://app.emailonacid.com/app/acidtest/od5IYQtx8yIbIUbeRyQXnP0yzFKEm2E9CKa3FU4BcEXFv/list",
+      "test_results_url": "https://app.emailonacid.com/app/acidtest/CAMb612bxbVwRWPhM4wZKNhhdcdkNxj0Rj6dtRRw6LQUO/list",
       "notes": "",
       "notes_by_num": {
         "1": "Partial. Not supported inside the `<body>`.",
@@ -51942,7 +51763,8 @@
         },
         "web-de": {
           "desktop-webmail": {
-            "2022-11": "y"
+            "2022-11": "y",
+            "2025-04": "n"
           },
           "ios": {
             "2022-11": "y"
