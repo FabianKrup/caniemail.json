@@ -1,6 +1,6 @@
 {
   "api_version": "1.0.4",
-  "last_update_date": "2025-05-17T01:48:57.215Z",
+  "last_update_date": "2025-05-18T01:57:55.564Z",
   "nicenames": {
     "family": {
       "gmail": "Gmail",
@@ -41129,7 +41129,7 @@
         },
         "mail-ru": {
           "desktop-webmail": {
-            "2020-10": "y"
+            "2020-09": "y"
           }
         },
         "fastmail": {
