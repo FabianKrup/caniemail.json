@@ -1,6 +1,6 @@
 {
   "api_version": "1.0.4",
-  "last_update_date": "2025-06-12T01:54:24.897Z",
+  "last_update_date": "2025-06-13T01:55:14.379Z",
   "nicenames": {
     "family": {
       "gmail": "Gmail",
@@ -20912,7 +20912,8 @@
       "test_results_url": "https://app.emailonacid.com/app/acidtest/cl8ZYgIGE372fkVVuJkwNJDd7B4JUpo23Nz6qANcSlRUA/list",
       "notes": null,
       "notes_by_num": {
-        "1": "Partial. Only supported on type selectors."
+        "1": "Partial. Only supported on type selectors.",
+        "2": "Partial. Supported with mouse clicks. Not supported with keyboard input."
       },
       "links": {
         "Can I use: :active": "https://caniuse.com/#feat=mdn-css_selectors_active",
@@ -20924,6 +20925,7 @@
       "stats": {
         "apple-mail": {
           "macos": {
+            "16": "a #2",
             "12.4": "n"
           },
           "ios": {
@@ -21674,6 +21676,7 @@
       "stats": {
         "apple-mail": {
           "macos": {
+            "16": "y",
             "12.4": "n"
           },
           "ios": {
@@ -30210,13 +30213,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2023-12": "u"
+            "2023-12": "y"
           },
           "ios": {
-            "2023-12": "u"
+            "2023-12": "y"
           },
           "android": {
-            "2023-12": "u"
+            "2023-12": "y"
           }
         },
         "hey": {
@@ -45037,13 +45040,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2023-09": "u"
+            "2023-09": "y"
           },
           "ios": {
-            "2023-09": "u"
+            "2023-09": "y"
           },
           "android": {
-            "2023-09": "u"
+            "2023-09": "y"
           }
         },
         "hey": {
