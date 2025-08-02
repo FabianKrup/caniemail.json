@@ -1,6 +1,6 @@
 {
   "api_version": "1.0.4",
-  "last_update_date": "2025-08-01T02:22:46.455Z",
+  "last_update_date": "2025-08-02T02:00:13.235Z",
   "nicenames": {
     "family": {
       "gmail": "Gmail",
@@ -11597,7 +11597,8 @@
       "notes": null,
       "notes_by_num": {
         "1": "Only supported if you’ve updated your OS with Safari 17.5 or later.",
-        "2": "Buggy. The function is supported but the color stays light even in dark mode."
+        "2": "Buggy. The function is supported but the color stays light even in dark mode.",
+        "3": "Partial. Not supported with Hotmail/Outlook accounts."
       },
       "links": {
         "Can I use: light-dark()": "https://caniuse.com/mdn-css_types_color_light-dark",
@@ -11667,7 +11668,7 @@
         },
         "samsung-email": {
           "android": {
-            "6.0": "u"
+            "6.2": "a #3"
           }
         },
         "sfr": {
