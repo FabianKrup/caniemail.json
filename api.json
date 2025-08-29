@@ -1,6 +1,6 @@
 {
   "api_version": "1.0.4",
-  "last_update_date": "2025-08-28T01:46:08.254Z",
+  "last_update_date": "2025-08-29T01:45:51.514Z",
   "nicenames": {
     "family": {
       "gmail": "Gmail",
@@ -13417,7 +13417,8 @@
         "5": "Partial. Not supported inline. (See [email-bugs#31](https://github.com/hteumeuleu/email-bugs/issues/31))",
         "6": "Partial. Only supported inline due to the lack of `<style>` support.",
         "7": "Partial. Removed if there is no space before when used with a `background-image` property. (See [email-bugs#16](https://github.com/hteumeuleu/email-bugs/issues/16))",
-        "8": "Partial. Only supported in lowercase."
+        "8": "Partial. Only supported in lowercase.",
+        "9": "Partial. Only supported if not written in lowercase."
       },
       "links": {
         "MDN: CSS Specificity": "https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity"
@@ -13533,7 +13534,8 @@
             "2021-11": "a #8"
           },
           "ios": {
-            "2021-11": "a #6"
+            "2021-11": "a #6",
+            "2025-08": "a #9"
           },
           "android": {
             "2021-11": "a #6"
