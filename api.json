@@ -1,6 +1,6 @@
 {
   "api_version": "1.0.4",
-  "last_update_date": "2026-02-16T02:36:50.779Z",
+  "last_update_date": "2026-02-17T02:33:20.314Z",
   "nicenames": {
     "family": {
       "gmail": "Gmail",
@@ -3248,13 +3248,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-01": "u"
+            "2024-01": "y"
           },
           "ios": {
-            "2024-01": "u"
+            "2024-01": "y"
           },
           "android": {
-            "2024-01": "u"
+            "2024-01": "y"
           }
         },
         "hey": {
@@ -7830,7 +7830,7 @@
       "slug": "css-color-scheme",
       "description": "Changes the default colors of HTML elements. Useful for when you want an email to display only in a dark color scheme or only a light scheme, regardless of user settings",
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": "dark mode, light mode",
       "test_url": "/tests/css-color-scheme.html",
       "test_results_url": "",
@@ -11618,7 +11618,8 @@
       "test_results_url": "https://app.emailonacid.com/app/acidtest/zSEJIfc49LeYUVU5ncqsWBDRRTZlqq01sYRUSICWOs74Y/list",
       "notes": null,
       "notes_by_num": {
-        "1": "Partial. Not supported with non Google accounts."
+        "1": "Partial. Not supported with non Google accounts.",
+        "2": "Partial. Not supported with Microsoft accounts."
       },
       "links": {
         "Can I use: CSS math functions min(), max() and clamp()": "https://caniuse.com/css-math-functions",
@@ -11693,7 +11694,8 @@
         },
         "samsung-email": {
           "android": {
-            "6.0": "n"
+            "6.0": "n",
+            "6.2.06.0": "a #2"
           }
         },
         "sfr": {
@@ -11801,7 +11803,7 @@
       "slug": "css-function-light-dark",
       "description": "Enables setting two colors (one for light and the other for dark mode) for a property.",
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": "dark, light",
       "test_url": "/tests/css-function-light-dark.html",
       "test_results_url": "https://app.emailonacid.com/app/acidtest/Lai13xyIE95H6jo1BBs6ay0f3RvJdPL344S3j3M7FbeU4/list",
@@ -11979,7 +11981,8 @@
       "test_results_url": "https://app.emailonacid.com/app/acidtest/zSEJIfc49LeYUVU5ncqsWBDRRTZlqq01sYRUSICWOs74Y/list",
       "notes": null,
       "notes_by_num": {
-        "1": "Partial. Not supported with non Google accounts."
+        "1": "Partial. Not supported with non Google accounts.",
+        "2": "Partial. Not supported with Microsoft accounts."
       },
       "links": {
         "Can I use: CSS math functions min(), max() and clamp()": "https://caniuse.com/css-math-functions",
@@ -12054,7 +12057,8 @@
         },
         "samsung-email": {
           "android": {
-            "6.0": "n"
+            "6.0": "n",
+            "6.2.06.0": "a #2"
           }
         },
         "sfr": {
@@ -12168,7 +12172,8 @@
       "test_results_url": "https://app.emailonacid.com/app/acidtest/zSEJIfc49LeYUVU5ncqsWBDRRTZlqq01sYRUSICWOs74Y/list",
       "notes": null,
       "notes_by_num": {
-        "1": "Partial. Not supported with non Google accounts."
+        "1": "Partial. Not supported with non Google accounts.",
+        "2": "Partial. Not supported with Microsoft accounts."
       },
       "links": {
         "Can I use: CSS math functions min(), max() and clamp()": "https://caniuse.com/css-math-functions",
@@ -12243,7 +12248,8 @@
         },
         "samsung-email": {
           "android": {
-            "6.0": "n"
+            "6.0": "n",
+            "6.2.06.0": "a #2"
           }
         },
         "sfr": {
@@ -13017,13 +13023,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-06": "u"
+            "2024-06": "y"
           },
           "ios": {
-            "2024-06": "u"
+            "2024-06": "y"
           },
           "android": {
-            "2024-06": "u"
+            "2024-06": "y"
           }
         },
         "hey": {
@@ -13613,7 +13619,7 @@
       "slug": "css-inline-size",
       "description": "",
       "url": "",
-      "tags": [],
+      "tags": "i18n",
       "keywords": null,
       "test_url": "/tests/css-box-model.html",
       "test_results_url": "https://app.emailonacid.com/app/acidtest/pyPQFHSYLFrhbRShalju0B2fYNwUgLuyKTLx4MLqiw5mE/list",
@@ -15648,7 +15654,7 @@
       "slug": "css-list-style",
       "description": null,
       "url": "",
-      "tags": [],
+      "tags": "i18n",
       "keywords": null,
       "test_url": "/tests/css-list.html",
       "test_results_url": "https://app.emailonacid.com/app/acidtest/ifwlqtEsBCU23xVI7NgjBqvJlcJ4c20Akv3aRW3ugRJsP/list",
@@ -18542,7 +18548,8 @@
         "1": "Partial. `E { F {}}` doesn’t work, but `E { & F {}}` does. Full support was added in macOS 14.2.",
         "2": "Buggy. The syntax is supported, but nested selectors are prefixed by the webmail, which might invalidate the selector.",
         "3": "Not supported. The nested selectors are removed, making the nested properties apply to the parent selector.",
-        "4": "Partial. Not supported with Hotmail/Outlook accounts."
+        "4": "Partial. Not supported with Hotmail/Outlook accounts.",
+        "5": "Partial. `@media` is not fully supported, and `& & &` syntax not supported"
       },
       "links": {
         "Can I use: CSS Nesting": "https://caniuse.com/css-nesting",
@@ -18659,13 +18666,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2023-08": "u"
+            "2023-08": "y"
           },
           "ios": {
-            "2023-08": "u"
+            "2023-08": "a #5"
           },
           "android": {
-            "2023-08": "u"
+            "2023-08": "a #5"
           }
         },
         "hey": {
@@ -19416,13 +19423,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-05": "u"
+            "2024-05": "y #4"
           },
           "ios": {
-            "2024-05": "u"
+            "2024-05": "y #4"
           },
           "android": {
-            "2024-05": "u"
+            "2024-05": "y #4"
           }
         },
         "hey": {
@@ -21529,6 +21536,202 @@
           },
           "android": {
             "2022-07": "n"
+          }
+        }
+      }
+    },
+    {
+      "slug": "css-pseudo-class-default",
+      "description": "Selects form elements that are the default in a group of related elements.",
+      "url": "",
+      "tags": "accessibility",
+      "keywords": "pseudo-class, form",
+      "test_url": "/tests/css-pseudo-class-default.html",
+      "test_results_url": "https://testi.at/proj/7ov4sbxz1krv07gkf5",
+      "notes": "Depends on device/browser support. Some devices/browsers do not support styling on &lt;option&gt;.",
+      "notes_by_num": {
+        "1": "Works on input[radio] and input[checkbox] only."
+      },
+      "links": {
+        "Can I use: :default CSS pseudo-class": "https://caniuse.com/css-default-pseudo",
+        "MDN: :default CSS pseudo-class": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:default"
+      },
+      "title": ":default",
+      "category": "css",
+      "last_test_date": "2026-02-05",
+      "stats": {
+        "apple-mail": {
+          "macos": {
+            "12": "y",
+            "26": "y"
+          },
+          "ios": {
+            "11": "y",
+            "26": "y"
+          }
+        },
+        "gmail": {
+          "desktop-webmail": {
+            "2026-02": "n"
+          },
+          "ios": {
+            "2026-02": "n"
+          },
+          "android": {
+            "2026-02": "n"
+          },
+          "mobile-webmail": {
+            "2026-02": "n"
+          }
+        },
+        "orange": {
+          "desktop-webmail": {
+            "2026-02": "u"
+          },
+          "ios": {
+            "2026-02": "u"
+          },
+          "android": {
+            "2026-02": "u"
+          }
+        },
+        "outlook": {
+          "windows": {
+            "2007": "n",
+            "2010": "n",
+            "2013": "n",
+            "2016": "n",
+            "2019": "n",
+            "2024": "n"
+          },
+          "windows-mail": {
+            "2026-02": "n"
+          },
+          "macos": {
+            "16.105.2": "y"
+          },
+          "outlook-com": {
+            "2026-02": "a #1"
+          },
+          "ios": {
+            "2026-02": "y"
+          },
+          "android": {
+            "2026-02": "y"
+          }
+        },
+        "samsung-email": {
+          "android": {
+            "6.0": "u"
+          }
+        },
+        "sfr": {
+          "desktop-webmail": {
+            "2026-02": "u"
+          },
+          "ios": {
+            "2026-02": "u"
+          },
+          "android": {
+            "2026-02": "u"
+          }
+        },
+        "thunderbird": {
+          "macos": {
+            "147.0.1": "y"
+          }
+        },
+        "aol": {
+          "desktop-webmail": {
+            "2026-02": "y"
+          },
+          "ios": {
+            "2026-02": "y"
+          },
+          "android": {
+            "2026-02": "y"
+          }
+        },
+        "yahoo": {
+          "desktop-webmail": {
+            "2026-02": "y"
+          },
+          "ios": {
+            "2026-02": "y"
+          },
+          "android": {
+            "2026-02": "y"
+          }
+        },
+        "protonmail": {
+          "desktop-webmail": {
+            "2026-02": "n"
+          },
+          "ios": {
+            "2026-02": "n"
+          },
+          "android": {
+            "2026-02": "n"
+          }
+        },
+        "hey": {
+          "desktop-webmail": {
+            "2026-02": "u"
+          }
+        },
+        "mail-ru": {
+          "desktop-webmail": {
+            "2026-02": "y"
+          }
+        },
+        "fastmail": {
+          "desktop-webmail": {
+            "2026-02": "u"
+          }
+        },
+        "laposte": {
+          "desktop-webmail": {
+            "2026-02": "u"
+          }
+        },
+        "free-fr": {
+          "desktop-webmail": {
+            "2026-02": "u"
+          }
+        },
+        "t-online-de": {
+          "desktop-webmail": {
+            "2026-02": "n"
+          }
+        },
+        "gmx": {
+          "desktop-webmail": {
+            "2026-02": "n"
+          },
+          "ios": {
+            "2026-02": "y"
+          },
+          "android": {
+            "2026-02": "n"
+          }
+        },
+        "web-de": {
+          "desktop-webmail": {
+            "2026-02": "n"
+          },
+          "ios": {
+            "2026-02": "u"
+          },
+          "android": {
+            "2026-02": "u"
+          }
+        },
+        "ionos-1and1": {
+          "desktop-webmail": {
+            "2026-02": "u"
+          },
+          "android": {
+            "2026-02": "u"
           }
         }
       }
@@ -29695,13 +29898,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2022-07": "u"
+            "2022-07": "y"
           },
           "ios": {
-            "2022-07": "u"
+            "2022-07": "y"
           },
           "android": {
-            "2022-07": "u"
+            "2022-07": "y"
           }
         },
         "hey": {
@@ -29910,7 +30113,7 @@
       "slug": "css-text-align-last",
       "description": "The `text-align-last` CSS property sets how the last line of a block or a line right before a forced line break is aligned.",
       "url": "",
-      "tags": [],
+      "tags": "i18n",
       "keywords": "align, align-last",
       "test_url": "/tests/css-text-align-last.html",
       "test_results_url": "https://app.emailonacid.com/app/acidtest/LxplTmJT9Ilq9GUyn8Aq8MVK6EO427qmx1Ic4A7jc7bOJ/list",
@@ -30028,7 +30231,7 @@
       "slug": "css-text-align",
       "description": "Sets the horizontal alignment of the content.",
       "url": "",
-      "tags": [],
+      "tags": "i18n",
       "keywords": "align",
       "test_url": "/tests/css-text-align.html",
       "test_results_url": "https://testi.at/proj/G4YtBn8fBxEsLx6uybqcxD",
@@ -31185,7 +31388,7 @@
       "slug": "css-text-decoration",
       "description": "Tested with the values `overline`, `underline` and `line-through`.",
       "url": "",
-      "tags": [],
+      "tags": "i18n",
       "keywords": "underline",
       "test_url": "/tests/css-text-decoration.html",
       "test_results_url": "https://app.emailonacid.com/app/acidtest/3r2uYHjW7RohepVjh05qVkSQ9t7gJVJd6O5ABI8grFvqQ/list",
@@ -32697,7 +32900,7 @@
       "slug": "css-text-transform",
       "description": "Each of the six `text-transform` values defined by MDN (`capitalize`, `uppercase`, `lowercase`, `none`, `full-width`, `full-size-kana`).",
       "url": "",
-      "tags": [],
+      "tags": "i18n",
       "keywords": null,
       "test_url": "/tests/css-text-transform.html",
       "test_results_url": "https://app.emailonacid.com/shared-preview/R6niSqR1SM",
@@ -37047,7 +37250,8 @@
       "notes_by_num": {
         "1": "Works with `-webkit` prefix",
         "2": "`all` value does not work",
-        "3": "Property is stripped from style tag"
+        "3": "Property is stripped from style tag",
+        "4": "`none` value does not work, client allow to select text anyway"
       },
       "links": {
         "Can I use: CSS user-select": "https://caniuse.com/?search=user-select",
@@ -37158,13 +37362,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-02": "u"
+            "2024-02": "a #2 #4"
           },
           "ios": {
-            "2024-02": "u"
+            "2024-02": "a #2 #4"
           },
           "android": {
-            "2024-02": "u"
+            "2024-02": "a #2 #4"
           }
         },
         "hey": {
@@ -37913,13 +38117,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-09": "u"
+            "2024-09": "y"
           },
           "ios": {
-            "2024-09": "u"
+            "2024-09": "y"
           },
           "android": {
-            "2024-09": "u"
+            "2024-09": "y"
           }
         },
         "hey": {
@@ -38247,13 +38451,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-05": "u"
+            "2024-05": "y #4"
           },
           "ios": {
-            "2024-05": "u"
+            "2024-05": "y #4"
           },
           "android": {
-            "2024-05": "u"
+            "2024-05": "y #4"
           }
         },
         "hey": {
@@ -41958,7 +42162,7 @@
       "slug": "html-blockquote",
       "description": null,
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": null,
       "test_url": "/tests/html-semantics.html",
       "test_results_url": "https://app.emailonacid.com/app/acidtest/IulqGoKCPriLhe6DbI1dWmF2AjH535vSIujVufxhenXVC/list",
@@ -42835,13 +43039,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-05": "u"
+            "2024-05": "y"
           },
           "ios": {
-            "2024-05": "u"
+            "2024-05": "y"
           },
           "android": {
-            "2024-05": "u"
+            "2024-05": "y"
           }
         },
         "hey": {
@@ -43016,13 +43220,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-05": "u"
+            "2024-05": "y"
           },
           "ios": {
-            "2024-05": "u"
+            "2024-05": "y"
           },
           "android": {
-            "2024-05": "u"
+            "2024-05": "y"
           }
         },
         "hey": {
@@ -43622,7 +43826,7 @@
       "slug": "html-dfn",
       "description": "It is used to identify a term that is going to be described within the content.",
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": null,
       "test_url": "/tests/html-dfn.html",
       "test_results_url": "https://testi.at/proj/gy2dfo4j19d4176d08y",
@@ -44749,7 +44953,7 @@
       "slug": "html-h1-h6",
       "description": "Support for headings elements in HTML: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`.",
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": "headings, h1, h2, h3, h4, h5, h6",
       "test_url": "/tests/html-semantics.html",
       "test_results_url": "https://app.emailonacid.com/app/acidtest/IulqGoKCPriLhe6DbI1dWmF2AjH535vSIujVufxhenXVC/list",
@@ -47404,7 +47608,7 @@
       "slug": "html-lists",
       "description": "Support for lists in HTML: `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` and `<dd>` elements.",
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": "ul, ol, li, dl, dt, dd",
       "test_url": "/tests/css-list.html",
       "test_results_url": "https://testi.at/proj/5jbpc3r2cknp15ayua",
@@ -48180,7 +48384,7 @@
       "slug": "html-meta-color-scheme",
       "description": "Changes the default colors of HTML elements. Useful for when you want an email to display only in a dark color scheme or only a light scheme, regardless of user settings. Equivalent to setting the color-scheme CSS property on the root element",
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": "dark-mode",
       "test_url": "/tests/html-meta-color-scheme.html",
       "test_results_url": "",
@@ -48737,7 +48941,7 @@
       "slug": "html-p",
       "description": null,
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": "paragraph",
       "test_url": "/tests/html-semantics.html",
       "test_results_url": "https://app.emailonacid.com/app/acidtest/IulqGoKCPriLhe6DbI1dWmF2AjH535vSIujVufxhenXVC/list",
@@ -50437,7 +50641,7 @@
       "slug": "html-ruby",
       "description": "",
       "url": "",
-      "tags": "i18n",
+      "tags": "i18n accessibility",
       "keywords": null,
       "test_url": "/tests/HTML5.html",
       "test_results_url": "https://app.emailonacid.com/app/acidtest/Bzyzx8Z5Kvlfib1Fw9Ted8xtPE26RcjPSdUobdUywgJVm/list",
@@ -50819,7 +51023,7 @@
       "slug": "html-semantics",
       "description": "This includes support for `<article>`, `<aside>`, `<details>`, `<figcaption>`, `<figure>`, `<footer>`, `<header>`, `<main>`, `<mark>`, `<nav>`, `<section>`, `<summary>`, `<time>` elements.",
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": "article, aside, details, figcaption, figure, footer, header, main, mark, nav, section, summary, time",
       "test_url": "/tests/html-semantics.html",
       "test_results_url": "https://app.emailonacid.com/app/acidtest/fel5GW8SquYS9SWxQHu5Z9s0IeTpLZcnf5ghDEqQFf5Je/list",
@@ -52387,7 +52591,7 @@
       "slug": "html-table",
       "description": null,
       "url": "",
-      "tags": [],
+      "tags": "accessibility",
       "keywords": null,
       "test_url": "/tests/html-table.html",
       "test_results_url": "https://app.emailonacid.com/app/acidtest/wwEgKadK3WVORrysJAcIrYgLlqhSw7z0aVvEQziMSHo7n/list",
@@ -53920,8 +54124,7 @@
       },
       "links": {
         "Can I use: AVIF image format": "https://caniuse.com/avif",
-        "MDN: Image file type and format guide": "https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types",
-        "avif.io: a free AVIF converter by Justin Schmitz and Niksa Sporin": "https://avif.io/"
+        "MDN: Image file type and format guide": "https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types"
       },
       "title": "AVIF image format",
       "category": "image",
