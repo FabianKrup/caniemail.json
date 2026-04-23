@@ -1,6 +1,6 @@
 {
   "api_version": "1.0.4",
-  "last_update_date": "2026-04-22T02:55:55.621Z",
+  "last_update_date": "2026-04-23T03:18:32.547Z",
   "nicenames": {
     "family": {
       "gmail": "Gmail",
@@ -792,7 +792,7 @@
       },
       "title": "animation",
       "category": "css",
-      "last_test_date": "2023-12-19",
+      "last_test_date": "2026-04-07",
       "stats": {
         "apple-mail": {
           "macos": {
@@ -872,7 +872,8 @@
         },
         "thunderbird": {
           "macos": {
-            "78.10": "y"
+            "78.10": "y",
+            "149.0.1": "n"
           }
         },
         "aol": {
@@ -7567,10 +7568,10 @@
             "2024-09": "y"
           },
           "ios": {
-            "2024-09": "u"
+            "2024-09": "y"
           },
           "android": {
-            "2024-09": "u"
+            "2024-09": "y"
           }
         },
         "hey": {
@@ -8481,13 +8482,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-04": "u"
+            "2024-04": "y"
           },
           "ios": {
-            "2024-04": "u"
+            "2024-04": "y"
           },
           "android": {
-            "2024-04": "u"
+            "2024-04": "y"
           }
         },
         "hey": {
@@ -10892,6 +10893,204 @@
       }
     },
     {
+      "slug": "css-font-size-adjust",
+      "description": "Adjusts the size of lowercase letters relative to the size of uppercase letters.",
+      "url": "",
+      "tags": "accessibility",
+      "keywords": "font, adjust, fallback, font metric",
+      "test_url": "/tests/css-font-size-adjust.html",
+      "test_results_url": "https://testi.at/proj/zn7d0pje1e3nsyz2i9",
+      "notes": "Rendering may depend on browser and OS support, Also applies to mobile client apps.",
+      "notes_by_num": {
+        "1": "Partial support. Supports one numerical value, 2-value font-metric syntax unsuported (ex-height, cap-height, ch-width, ic-width, ic-height).",
+        "2": "Not supported with non Google accounts.",
+        "3": "2-value syntax is supported, but the first value (font-metric) is ignored."
+      },
+      "links": {
+        "Can I use: CSS font-size-adjust": "https://caniuse.com/font-size-adjust",
+        "MDN: font-size-adjust": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust"
+      },
+      "title": "font-size-adjust",
+      "category": "css",
+      "last_test_date": "2026-04-16",
+      "stats": {
+        "apple-mail": {
+          "macos": {
+            "11": "n",
+            "12": "n",
+            "13": "a #1",
+            "14": "y",
+            "15": "y",
+            "26": "y"
+          },
+          "ios": {
+            "11": "n",
+            "12": "n",
+            "13": "n",
+            "14": "n",
+            "15": "n",
+            "16": "n",
+            "17": "y",
+            "18": "y",
+            "26": "y"
+          }
+        },
+        "gmail": {
+          "desktop-webmail": {
+            "2026-04": "y"
+          },
+          "ios": {
+            "2026-04": "a #2"
+          },
+          "android": {
+            "2026-04": "a #2"
+          },
+          "mobile-webmail": {
+            "2026-04": "y"
+          }
+        },
+        "orange": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "outlook": {
+          "windows": {
+            "2013": "n",
+            "2016": "n",
+            "2019": "n",
+            "2021": "n",
+            "2024": "n"
+          },
+          "windows-mail": {
+            "2026-04": "n"
+          },
+          "macos": {
+            "2026-04": "y"
+          },
+          "outlook-com": {
+            "2026-04": "y"
+          },
+          "ios": {
+            "2026-04": "y"
+          },
+          "android": {
+            "2026-04": "y"
+          }
+        },
+        "yahoo": {
+          "desktop-webmail": {
+            "2026-04": "a #3"
+          },
+          "ios": {
+            "2026-04": "a #3"
+          },
+          "android": {
+            "2026-04": "a #3"
+          }
+        },
+        "aol": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "samsung-email": {
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "sfr": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "thunderbird": {
+          "macos": {
+            "149": "y"
+          }
+        },
+        "protonmail": {
+          "desktop-webmail": {
+            "2026-04": "y"
+          },
+          "ios": {
+            "2026-04": "y"
+          },
+          "android": {
+            "2026-04": "y"
+          }
+        },
+        "hey": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "mail-ru": {
+          "desktop-webmail": {
+            "2026-04": "y"
+          }
+        },
+        "fastmail": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "laposte": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "gmx": {
+          "desktop-webmail": {
+            "2026-04": "a #1"
+          },
+          "ios": {
+            "2026-04": "y"
+          },
+          "android": {
+            "2026-04": "y"
+          }
+        },
+        "web-de": {
+          "desktop-webmail": {
+            "2026-04": "a #1"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "ionos-1and1": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        }
+      }
+    },
+    {
       "slug": "css-font-size",
       "description": "Sets the size of the font.",
       "url": "",
@@ -11021,13 +11220,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-02": "u"
+            "2024-02": "y"
           },
           "ios": {
-            "2024-02": "u"
+            "2024-02": "y"
           },
           "android": {
-            "2024-02": "u"
+            "2024-02": "y"
           }
         },
         "hey": {
@@ -13611,6 +13810,188 @@
         "wp-pl": {
           "desktop-webmail": {
             "2023-12": "n"
+          }
+        }
+      }
+    },
+    {
+      "slug": "css-inert-attribute",
+      "description": "This attribute should render elements inactive",
+      "url": "",
+      "tags": "accessibility",
+      "keywords": "focus, inactive",
+      "test_url": "/tests/css-inert-attribute.html",
+      "test_results_url": "https://testi.at/proj/eg6o04ae0kv6t3ek0px",
+      "notes": null,
+      "notes_by_num": null,
+      "links": {
+        "Can I use: inert": "https://caniuse.com/?search=inert",
+        "MDN: inert": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/inert"
+      },
+      "title": "inert",
+      "category": "css",
+      "last_test_date": "2026-04-16",
+      "stats": {
+        "apple-mail": {
+          "macos": {
+            "2026-04": "y"
+          },
+          "ios": {
+            "2026-04": "y"
+          }
+        },
+        "gmail": {
+          "desktop-webmail": {
+            "2026-04": "n"
+          },
+          "ios": {
+            "2026-04": "n"
+          },
+          "android": {
+            "2026-04": "n"
+          },
+          "mobile-webmail": {
+            "2026-04": "n"
+          }
+        },
+        "orange": {
+          "desktop-webmail": {
+            "2026-04": "u",
+            "2021-03": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "outlook": {
+          "windows": {
+            "2013": "n",
+            "2016": "n",
+            "2019": "n",
+            "2021": "n",
+            "2024": "n"
+          },
+          "windows-mail": {
+            "2026-04": "n"
+          },
+          "macos": {
+            "2026-04": "n"
+          },
+          "outlook-com": {
+            "2026-04": "n"
+          },
+          "ios": {
+            "2026-04": "n"
+          },
+          "android": {
+            "2026-04": "n"
+          }
+        },
+        "thunderbird": {
+          "macos": {
+            "2026-04": "u"
+          }
+        },
+        "yahoo": {
+          "desktop-webmail": {
+            "2026-04": "n"
+          },
+          "ios": {
+            "2026-04": "n"
+          },
+          "android": {
+            "2026-04": "n"
+          }
+        },
+        "aol": {
+          "desktop-webmail": {
+            "2026-04": "n"
+          },
+          "ios": {
+            "2026-04": "n"
+          },
+          "android": {
+            "2026-04": "n"
+          }
+        },
+        "samsung-email": {
+          "android": {
+            "2026-04": "y"
+          }
+        },
+        "sfr": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "protonmail": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "hey": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "mail-ru": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "fastmail": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "laposte": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "gmx": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "web-de": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "ionos-1and1": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
           }
         }
       }
@@ -22112,6 +22493,376 @@
           },
           "android": {
             "2022-07": "y"
+          }
+        }
+      }
+    },
+    {
+      "slug": "css-pseudo-class-focus-visible",
+      "description": null,
+      "url": "",
+      "tags": "accessibility",
+      "keywords": "pseudo-class, focus",
+      "test_url": "/tests/css-selectors-pseudo-class-focus.html",
+      "test_results_url": "https://testi.at/proj/pv47sy35udb30ae816",
+      "notes": null,
+      "notes_by_num": {
+        "1": "Partial. Only supported on type selectors.",
+        "2": "Input with type text is not focusable at all",
+        "3": "Button is not focusable on tab"
+      },
+      "links": {
+        "Can I use: :focus-visible": "https://caniuse.com/?search=focus-visible",
+        "MDN: :focus-visible": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible"
+      },
+      "title": ":focus-visible",
+      "category": "css",
+      "last_test_date": "2026-04-14",
+      "stats": {
+        "apple-mail": {
+          "macos": {
+            "2026-04": "y #3"
+          },
+          "ios": {
+            "2026-04": "u"
+          }
+        },
+        "gmail": {
+          "desktop-webmail": {
+            "2026-04": "n"
+          },
+          "ios": {
+            "2026-04": "n"
+          },
+          "android": {
+            "2026-04": "n"
+          },
+          "mobile-webmail": {
+            "2026-04": "n"
+          }
+        },
+        "orange": {
+          "desktop-webmail": {
+            "2026-04": "u",
+            "2021-03": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "outlook": {
+          "windows": {
+            "2013": "n",
+            "2016": "n",
+            "2019": "n",
+            "2021": "n",
+            "2024": "n"
+          },
+          "windows-mail": {
+            "2026-04": "u"
+          },
+          "macos": {
+            "2026-04": "a #1"
+          },
+          "outlook-com": {
+            "2026-04": "a #1"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "a #1"
+          }
+        },
+        "thunderbird": {
+          "macos": {
+            "2026-04": "u"
+          }
+        },
+        "yahoo": {
+          "desktop-webmail": {
+            "2026-04": "y"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "y"
+          }
+        },
+        "aol": {
+          "desktop-webmail": {
+            "2026-04": "y"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "y"
+          }
+        },
+        "samsung-email": {
+          "android": {
+            "2026-04": "y #2"
+          }
+        },
+        "sfr": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "protonmail": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "hey": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "mail-ru": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "fastmail": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "laposte": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "gmx": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "web-de": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "ionos-1and1": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        }
+      }
+    },
+    {
+      "slug": "css-pseudo-class-focus-within",
+      "description": null,
+      "url": "",
+      "tags": "accessibility",
+      "keywords": "pseudo-class, focus",
+      "test_url": "/tests/css-selectors-pseudo-class-focus.html",
+      "test_results_url": "https://testi.at/proj/pv47sy35udb30ae816",
+      "notes": null,
+      "notes_by_num": {
+        "1": "Partial. Only supported on type selectors."
+      },
+      "links": {
+        "Can I use: :focus-within": "https://caniuse.com/?search=focus-within",
+        "MDN: :focus-within": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-within"
+      },
+      "title": ":focus-within",
+      "category": "css",
+      "last_test_date": "2026-04-14",
+      "stats": {
+        "apple-mail": {
+          "macos": {
+            "2026-04": "y"
+          },
+          "ios": {
+            "2026-04": "u"
+          }
+        },
+        "gmail": {
+          "desktop-webmail": {
+            "2026-04": "n"
+          },
+          "ios": {
+            "2026-04": "n"
+          },
+          "android": {
+            "2026-04": "n"
+          },
+          "mobile-webmail": {
+            "2026-04": "n"
+          }
+        },
+        "orange": {
+          "desktop-webmail": {
+            "2026-04": "u",
+            "2021-03": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "outlook": {
+          "windows": {
+            "2013": "n",
+            "2016": "n",
+            "2019": "n",
+            "2021": "n",
+            "2024": "n"
+          },
+          "windows-mail": {
+            "2026-04": "u"
+          },
+          "macos": {
+            "2026-04": "a #1"
+          },
+          "outlook-com": {
+            "2026-04": "n"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "a #1"
+          }
+        },
+        "thunderbird": {
+          "macos": {
+            "2026-04": "u"
+          }
+        },
+        "yahoo": {
+          "desktop-webmail": {
+            "2026-04": "y"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "y"
+          }
+        },
+        "aol": {
+          "desktop-webmail": {
+            "2026-04": "y"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "y"
+          }
+        },
+        "samsung-email": {
+          "android": {
+            "2026-04": "y"
+          }
+        },
+        "sfr": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "protonmail": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "hey": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "mail-ru": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "fastmail": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "laposte": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          }
+        },
+        "gmx": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "web-de": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "ios": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
+          }
+        },
+        "ionos-1and1": {
+          "desktop-webmail": {
+            "2026-04": "u"
+          },
+          "android": {
+            "2026-04": "u"
           }
         }
       }
@@ -32077,7 +32828,7 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2021-01": "y"
+            "2021-01": "a #2"
           },
           "ios": {
             "2021-01": "y"
@@ -32263,13 +33014,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-04": "u"
+            "2024-04": "a #2"
           },
           "ios": {
-            "2024-04": "u"
+            "2024-04": "n"
           },
           "android": {
-            "2024-04": "u"
+            "2024-04": "y"
           }
         },
         "hey": {
@@ -33580,13 +34331,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-04": "u"
+            "2024-04": "y"
           },
           "ios": {
-            "2024-04": "u"
+            "2024-04": "y"
           },
           "android": {
-            "2024-04": "u"
+            "2024-04": "y"
           }
         },
         "hey": {
@@ -43573,13 +44324,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-04": "u"
+            "2024-04": "y"
           },
           "ios": {
-            "2024-04": "u"
+            "2024-04": "y"
           },
           "android": {
-            "2024-04": "u"
+            "2024-04": "y"
           }
         },
         "hey": {
