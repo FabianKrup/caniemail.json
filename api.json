@@ -1,6 +1,6 @@
 {
   "api_version": "1.0.4",
-  "last_update_date": "2026-06-29T04:19:51.516Z",
+  "last_update_date": "2026-06-30T04:00:12.742Z",
   "nicenames": {
     "family": {
       "gmail": "Gmail",
@@ -13838,7 +13838,9 @@
       "test_url": "/tests/css-inert-attribute.html",
       "test_results_url": "https://testi.at/proj/eg6o04ae0kv6t3ek0px",
       "notes": null,
-      "notes_by_num": null,
+      "notes_by_num": {
+        "1": "Works except on form tag"
+      },
       "links": {
         "Can I use: inert": "https://caniuse.com/?search=inert",
         "MDN: inert": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/inert"
@@ -13950,13 +13952,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2026-04": "u"
+            "2026-04": "a #1"
           },
           "ios": {
-            "2026-04": "u"
+            "2026-04": "n"
           },
           "android": {
-            "2026-04": "u"
+            "2026-04": "n"
           }
         },
         "hey": {
@@ -27253,7 +27255,9 @@
       "notes": null,
       "notes_by_num": {
         "1": "`resize` property is stripped from style tag",
-        "2": "Does not support `inline` and `block` values"
+        "2": "Does not support `inline` and `block` values",
+        "3": "Supported but depends of browser support",
+        "4": "Supported but barely usable, system gesture management often take priority"
       },
       "links": {
         "Can I use: CSS resize": "https://caniuse.com/?search=resize",
@@ -27364,13 +27368,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-01": "u"
+            "2024-01": "a #3"
           },
           "ios": {
             "2024-01": "n"
           },
           "android": {
-            "2024-01": "u"
+            "2024-01": "a #4"
           }
         },
         "hey": {
@@ -30186,13 +30190,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-03": "u"
+            "2024-03": "y"
           },
           "ios": {
-            "2024-03": "u"
+            "2024-03": "y"
           },
           "android": {
-            "2024-03": "u"
+            "2024-03": "y"
           }
         },
         "hey": {
@@ -30336,13 +30340,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-02": "u"
+            "2024-02": "y"
           },
           "ios": {
-            "2024-02": "u"
+            "2024-02": "y"
           },
           "android": {
-            "2024-02": "u"
+            "2024-02": "y"
           }
         },
         "hey": {
