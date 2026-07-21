@@ -1,6 +1,6 @@
 {
   "api_version": "1.0.4",
-  "last_update_date": "2026-07-20T03:31:41.096Z",
+  "last_update_date": "2026-07-21T03:12:54.477Z",
   "nicenames": {
     "family": {
       "gmail": "Gmail",
@@ -13417,13 +13417,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-08": "u"
+            "2024-08": "y"
           },
           "ios": {
-            "2024-08": "u"
+            "2024-08": "y"
           },
           "android": {
-            "2024-08": "u"
+            "2024-08": "y"
           }
         },
         "hey": {
@@ -13487,7 +13487,9 @@
       "test_url": "/tests/css-hyphen.html",
       "test_results_url": "https://testi.at/proj/rvEUZkBsPVNSbRohvoRigyRiM",
       "notes": null,
-      "notes_by_num": null,
+      "notes_by_num": {
+        "1": "Applies an equivalent behaviour of `word-wrap: break-word` for mobile."
+      },
       "links": {
         "Can I use: CSS property: hyphens": "https://caniuse.com/css-hyphens",
         "MDN: hyphens": "https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens"
@@ -13605,13 +13607,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2022-08": "u"
+            "2022-08": "y"
           },
           "ios": {
-            "2022-08": "u"
+            "2022-08": "y #1"
           },
           "android": {
-            "2022-08": "u"
+            "2022-08": "y #1"
           }
         },
         "hey": {
@@ -17017,7 +17019,9 @@
       "test_url": "/tests/css-mask-image.html",
       "test_results_url": "https://testi.at/proj/x9aotv8ysvn805531p",
       "notes": null,
-      "notes_by_num": null,
+      "notes_by_num": {
+        "1": "Notation using `url` is not supported."
+      },
       "links": {
         "Can I use: CSS property: mask-image": "https://caniuse.com/mask-image",
         "MDN: mask-image": "https://developer.mozilla.org/en-US/docs/Web/CSS/mask-image"
@@ -17134,13 +17138,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-11": "u"
+            "2024-11": "a #1"
           },
           "ios": {
-            "2024-11": "u"
+            "2024-11": "a #1"
           },
           "android": {
-            "2024-11": "u"
+            "2024-11": "a #1"
           }
         },
         "hey": {
@@ -20363,13 +20367,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2022-08": "u"
+            "2022-08": "y"
           },
           "ios": {
-            "2022-08": "u"
+            "2022-08": "y"
           },
           "android": {
-            "2022-08": "u"
+            "2022-08": "y"
           }
         },
         "hey": {
@@ -39877,7 +39881,8 @@
       "notes_by_num": {
         "1": "Applies `word-wrap: break-word` to all items.",
         "2": "Does not honor any wrapping, including `word-wrap`, `overflow-wrap`, and `word-break`. Using an equivalent MSO breakdown (`-ms-word-break: break-all` and `mso-hyphenate: none` together) does not work.",
-        "3": "Supports both `word-wrap` and equivalent MSO breakdown (`-ms-word-break: break-all` and `mso-hyphenate: none` together)"
+        "3": "Supports both `word-wrap` and equivalent MSO breakdown (`-ms-word-break: break-all` and `mso-hyphenate: none` together)",
+        "4": "`word-wrap` is correctly supported, however `word-break` seems to break for all values"
       },
       "links": {
         "Can I use: word-wrap": "https://caniuse.com/wordwrap",
@@ -39925,6 +39930,17 @@
         "yahoo": {
           "desktop-webmail": {
             "2025-05": "y"
+          }
+        },
+        "protonmail": {
+          "desktop-webmail": {
+            "2025-05": "y"
+          },
+          "ios": {
+            "2024-11": "a #4"
+          },
+          "android": {
+            "2024-11": "a #4"
           }
         }
       }
