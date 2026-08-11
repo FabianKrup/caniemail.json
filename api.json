@@ -1,6 +1,6 @@
 {
   "api_version": "1.0.4",
-  "last_update_date": "2026-08-10T02:04:30.030Z",
+  "last_update_date": "2026-08-11T01:59:52.558Z",
   "nicenames": {
     "family": {
       "gmail": "Gmail",
@@ -14205,7 +14205,9 @@
       "test_url": "/tests/css-inset.html",
       "test_results_url": "https://testi.at/proj/rlpdia3k18jytjx8c2",
       "notes": null,
-      "notes_by_num": null,
+      "notes_by_num": {
+        "1": "Buggy. Almost all values are replaced by `unset`."
+      },
       "links": {
         "Can I use: CSS inset": "https://caniuse.com/?search=inset",
         "MDN: inset": "https://developer.mozilla.org/en-US/docs/Web/CSS/inset"
@@ -14314,13 +14316,13 @@
         },
         "protonmail": {
           "desktop-webmail": {
-            "2024-05": "u"
+            "2024-05": "n #1"
           },
           "ios": {
-            "2024-05": "u"
+            "2024-05": "n"
           },
           "android": {
-            "2024-05": "u"
+            "2024-05": "y"
           }
         },
         "hey": {
@@ -44269,6 +44271,185 @@
       }
     },
     {
+      "slug": "html-command-attribute",
+      "description": "Attributes used to manage popover and dialog open states. Replacing popovertarget/popovertargetaction",
+      "url": "",
+      "tags": [],
+      "keywords": null,
+      "test_url": "",
+      "test_results_url": "",
+      "notes": null,
+      "notes_by_num": {
+        "1": "Partial. Not supported with Microsoft (Hotmail/Outlook) accounts.",
+        "2": "Buggy. Webmail styles set dialog to display:block so we need to revert with display:revert"
+      },
+      "links": null,
+      "title": "command and commandfor attributes",
+      "category": "html",
+      "last_test_date": "2026-07-13",
+      "stats": {
+        "apple-mail": {
+          "macos": {
+            "16": "y"
+          },
+          "ios": {
+            "18.7": "n",
+            "26.9": "y"
+          }
+        },
+        "gmail": {
+          "desktop-webmail": {
+            "2026-07": "n"
+          },
+          "ios": {
+            "2026-07": "n"
+          },
+          "android": {
+            "2026-07": "n"
+          },
+          "mobile-webmail": {
+            "2026-07": "n"
+          }
+        },
+        "orange": {
+          "desktop-webmail": {
+            "2026-07": "u"
+          },
+          "ios": {
+            "2026-07": "u"
+          },
+          "android": {
+            "2026-07": "u"
+          }
+        },
+        "outlook": {
+          "windows": {
+            "2007": "n",
+            "2010": "n",
+            "2013": "n",
+            "2016": "n",
+            "2019": "n"
+          },
+          "windows-mail": {
+            "2026-07": "n"
+          },
+          "macos": {
+            "2026-07": "n"
+          },
+          "outlook-com": {
+            "2026-07": "n"
+          },
+          "ios": {
+            "2026-07": "u"
+          },
+          "android": {
+            "2026-07": "n"
+          }
+        },
+        "thunderbird": {
+          "macos": {
+            "152": "y"
+          }
+        },
+        "yahoo": {
+          "desktop-webmail": {
+            "2026-07": "n"
+          },
+          "ios": {
+            "2026-07": "n"
+          },
+          "android": {
+            "2026-07": "n"
+          }
+        },
+        "aol": {
+          "desktop-webmail": {
+            "2026-07": "n"
+          },
+          "ios": {
+            "2026-07": "n"
+          },
+          "android": {
+            "2026-07": "n"
+          }
+        },
+        "samsung-email": {
+          "android": {
+            "6.2.13": "a #1"
+          }
+        },
+        "sfr": {
+          "desktop-webmail": {
+            "2026-07": "u"
+          },
+          "ios": {
+            "2026-07": "u"
+          },
+          "android": {
+            "2026-07": "u"
+          }
+        },
+        "protonmail": {
+          "desktop-webmail": {
+            "2026-07": "a #2"
+          },
+          "ios": {
+            "2026-07": "n"
+          },
+          "android": {
+            "2026-07": "n"
+          }
+        },
+        "hey": {
+          "desktop-webmail": {
+            "2026-07": "u"
+          }
+        },
+        "mail-ru": {
+          "desktop-webmail": {
+            "2026-07": "u"
+          }
+        },
+        "fastmail": {
+          "desktop-webmail": {
+            "2026-07": "u"
+          }
+        },
+        "laposte": {
+          "desktop-webmail": {
+            "2026-078": "u"
+          }
+        },
+        "gmx": {
+          "desktop-webmail": {
+            "2026-07": "n"
+          },
+          "ios": {
+            "2026-07": "u"
+          },
+          "android": {
+            "2026-07": "n"
+          }
+        },
+        "web-de": {
+          "desktop-webmail": {
+            "2026-07": "n"
+          },
+          "ios": {
+            "2026-07": "u"
+          },
+          "android": {
+            "2026-07": "n"
+          }
+        },
+        "ionos-1and1": {
+          "desktop-webmail": {
+            "2026-07": "n"
+          }
+        }
+      }
+    },
+    {
       "slug": "html-comments",
       "description": "Adds explanatory notes to the code or to prevent the browser from interpreting specific parts of the style sheet",
       "url": "",
@@ -50143,12 +50324,14 @@
       "notes": null,
       "notes_by_num": {
         "1": "Partial. Not supported with Hotmail/Outlook accounts.",
-        "2": "Partial. The `popovertarget` attribute is supported, but the `popover` attribute and the `dialog` element are not."
+        "2": "Partial. The `popovertarget` attribute is supported, but the `popover` attribute and the `dialog` element are not.",
+        "3": "Buggy. A button with just an image inside will trigger an image zoom rather than the popover.",
+        "4": "Partial. Does not work with command/commandfor attributes only with popovertarget/popovertargetaction"
       },
       "links": null,
       "title": "popover attribute",
       "category": "html",
-      "last_test_date": "2023-09-25",
+      "last_test_date": "2026-07-13",
       "stats": {
         "apple-mail": {
           "macos": {
@@ -50229,7 +50412,8 @@
             "2023-09": "n"
           },
           "android": {
-            "2023-09": "u"
+            "2023-09": "u",
+            "2026-07": "n"
           }
         },
         "samsung-email": {
@@ -50251,18 +50435,22 @@
         },
         "thunderbird": {
           "macos": {
+            "152": "a #3",
             "115.2": "n"
           }
         },
         "protonmail": {
           "desktop-webmail": {
-            "2023-09": "n"
+            "2023-09": "n",
+            "2026-07": "y"
           },
           "ios": {
-            "2023-09": "n"
+            "2023-09": "n",
+            "2026-07": "y #4"
           },
           "android": {
-            "2023-09": "u"
+            "2023-09": "u",
+            "2026-07": "y #4"
           }
         },
         "hey": {
@@ -50287,10 +50475,12 @@
         },
         "gmx": {
           "desktop-webmail": {
-            "2022-06": "u"
+            "2022-06": "u",
+            "2026-07": "n"
           },
           "ios": {
-            "2022-06": "u"
+            "2022-06": "u",
+            "2026-07": "y"
           },
           "android": {
             "2022-06": "u"
@@ -50298,10 +50488,12 @@
         },
         "web-de": {
           "desktop-webmail": {
-            "2022-06": "u"
+            "2022-06": "u",
+            "2026-07": "n"
           },
           "ios": {
-            "2022-06": "u"
+            "2022-06": "u",
+            "2026-07": "y"
           },
           "android": {
             "2022-06": "u"
@@ -50309,7 +50501,8 @@
         },
         "ionos-1and1": {
           "desktop-webmail": {
-            "2022-06": "u"
+            "2022-06": "u",
+            "2026-07": "n"
           },
           "android": {
             "2022-06": "u"
