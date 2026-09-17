@@ -1,6 +1,6 @@
 {
   "api_version": "1.0.4",
-  "last_update_date": "2026-09-16T04:05:38.395Z",
+  "last_update_date": "2026-09-17T04:12:35.364Z",
   "nicenames": {
     "family": {
       "gmail": "Gmail",
@@ -49382,13 +49382,15 @@
       "tags": "accessibility",
       "keywords": "dark-mode",
       "test_url": "/tests/html-meta-color-scheme.html",
-      "test_results_url": "",
+      "test_results_url": "https://public.mailgun.com/email-preview/ffb681d2-e77b-4990-888d-8d65edfd5877",
       "notes": "",
-      "notes_by_num": null,
+      "notes_by_num": {
+        "1": "Partial support. Only the value `light only` is supported (see [Google IssueTracker](https://issuetracker.google.com/issues/201441498#comment21)."
+      },
       "links": null,
       "title": "color-scheme meta tag",
       "category": "html",
-      "last_test_date": "2023-09-18",
+      "last_test_date": "2026-09-16",
       "stats": {
         "apple-mail": {
           "macos": {
@@ -49400,16 +49402,20 @@
         },
         "gmail": {
           "desktop-webmail": {
-            "2023-09": "n"
+            "2023-09": "n",
+            "2026-09": "n"
           },
           "ios": {
-            "2019-09": "n"
+            "2019-09": "n",
+            "2026-09": "a #1"
           },
           "android": {
-            "2023-09": "n"
+            "2023-09": "n",
+            "2026-09": "a #1"
           },
           "mobile-webmail": {
-            "2023-09": "n"
+            "2023-09": "n",
+            "2026-09": "n"
           }
         },
         "orange": {
@@ -57041,15 +57047,16 @@
       "tags": [],
       "keywords": "image, SVG",
       "test_url": "/tests/images.html",
-      "test_results_url": "https://app.emailonacid.com/app/acidtest/xm1T5nQ1MKtHpVSJidhagmt3Z53CjqbkMhorlvuM0Gz57/list",
+      "test_results_url": "https://public.mailgun.com/email-preview/bfa94a66-b687-47d2-8301-3c53fdb16a5c",
       "notes": null,
       "notes_by_num": {
-        "1": "Partially supported. Only works with non Google accounts."
+        "1": "Partially supported. Only works with non Google accounts.",
+        "2": "Partially supported. The image is rendered but rasterized in PNG."
       },
       "links": null,
       "title": "SVG image format",
       "category": "image",
-      "last_test_date": "2023-01-15",
+      "last_test_date": "2026-09-16",
       "stats": {
         "apple-mail": {
           "macos": {
@@ -57059,26 +57066,31 @@
           "ios": {
             "13": "n",
             "14": "n",
-            "15": "y"
+            "15": "y",
+            "26": "y"
           }
         },
         "gmail": {
           "desktop-webmail": {
             "2020-02": "n",
             "2023-01": "n",
-            "2024-07": "n"
+            "2024-07": "n",
+            "2026-09": "a #2"
           },
           "ios": {
             "2020-02": "a #1",
-            "2023-01": "a #1"
+            "2023-01": "a #1",
+            "2026-09": "a #2"
           },
           "android": {
             "2020-02": "a #1",
-            "2023-01": "a #1"
+            "2023-01": "a #1",
+            "2026-09": "a #2"
           },
           "mobile-webmail": {
             "2020-02": "n",
-            "2023-01": "n"
+            "2023-01": "n",
+            "2026-09": "a #2"
           }
         },
         "outlook": {
@@ -57124,7 +57136,8 @@
         },
         "aol": {
           "desktop-webmail": {
-            "2020-02": "y"
+            "2020-02": "y",
+            "2026-09": "y"
           },
           "ios": {
             "2020-02": "y"
@@ -57135,7 +57148,8 @@
         },
         "yahoo": {
           "desktop-webmail": {
-            "2020-02": "y"
+            "2020-02": "y",
+            "2026-09": "y"
           },
           "ios": {
             "2020-02": "y"
